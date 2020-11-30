@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Math Function Assignments</title>
+        <script src="./JS/main.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Addition Function: using the + operator-->
+        <div>
+            <button onclick="addition_Function()">5 + 2 = </button>
+            <p id="Math1"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+
+
+        <!-- Subtraction Function: using the - operator -->
+        <div>
+            <button onclick="subtraction_Function()">7 - 5 = </button>
+            <p id="Math2"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Multiplication Function: using the * operator -->
+        <div>
+            <button onclick="multiplication_Function()">5 x 2 = </button>
+            <p id="Math3"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Division Function: using the / operator -->
+        <div>
+            <button onclick="division_Function()">45 / 5 = </button>
+            <p id="Math4"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Multiple Math Functions using multiple operators -->
+        <div>
+            <button onclick="multiple_Functions()">(5 + 2) * 45 / 5 - 5 = </button>
+            <p id="Math5"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Modulus Operator: the remainder after the dividend is divided by the divisor -->
+        <div>
+            <button onclick="modulus_Operator()">55 / 2 remainder (modulus) = </button>
+            <p id="Math6"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Negation Operator: Returns the opposite or negative form of something using negative sign (-) followed by the variable name -->
+        <div>
+            <button onclick="negation_Operator()">-1995 (negation) = </button>
+            <p id="Math7"></p>
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Increment Operator: an addition or to increase something using ++ operator -->
+        <div>
+            <button onclick="increment_Operator()">1995 (increment) = </button>
+            <p id="Math8"></p>
+        
+        </div>
+        
+        <br>    <!-- line space-->
+        
+        <!-- Decrement Operator: to decrease or reduce using -- operator -->
+        <div>
+            <button onclick="decrement_Operator()">7.5 (decrement) = </button>
+            <p id="Math9"></p>
+        </div>
+
+        <br>    <!-- line space-->
+
+        <!-- Random Method: Math.random -->
+        <script>
+            document.write("A random number between 0 and 1995 would be " + Math.random()* 1995);
+        </script>
+
+        <br>    <!-- line space-->
+        <br>    <!-- line space-->
+        
+        <!-- Math Object Method: Math.round -->
+        <script>
+            document.write("10.8 rounded would be " + Math.round(10.8));
+        </script>
+        
+    </body>
+</html>
