@@ -1,0 +1,51 @@
+<!-- 
+ASSIGNMENT (Step 118)
+    1. Within the Basic Javascripts folder, create a "Project6_ternary__operators_constructors" folder. Then, within this folder, create a new file and name it “index.html”.
+    2. Within the index.html file, do the following:
+        Write out the basic HTML template.
+        Within the <head> or <body> element, write the following code:    
+            <script src="./JS/main.js"></script>    
+        Within the <body> element write all the following code:
+            <p>Riders must be at least 52 centimeters tall to ride.</p>
+            <input id="Height" value="52" />
+            <button onclick="Ride_Function()">Click here</button>
+            <p id="Ride"></p>
+        Save the file.
+    3. Create a JS folder within the Project6_ternary_operators_constructors folder. Create a new file within the JS folder and name it “main.js”. In it, write the following code:
+            function Ride_Function() {
+                var Height, Can_Ride;
+                Height = document.getElementById("Height").value;
+                Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
+                document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+            }
+    4. Save the file.
+    5. Successfully execute the index.html file in the browser.
+CHALLENGE (Step 119)
+    Utilizing HTML, JavaScript and ternary operators, create a basic program that outputs whether or not a user is old enough to vote.
+    In this program, the user will be able to input their age. If they are under 18, make it state, “You are not old enough to vote” (or a different string of your choosing). 
+    If they are 18 or older, make it state, “You can vote!” (or a different string of your choosing).
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <script src="./JS/main.js"></script>
+		<title></title>
+
+	</head>
+	<body>
+
+        <p>Riders must be at least 52 centimeters tall to ride.</p>
+        <input id="Height" value="52" />
+        <button onclick="Ride_Function()">Click here</button>
+        <p id="Ride"></p>
+        <br>
+        <br>
+        <p>Please enter your age:</p>
+        <input id="Age" value="18" />
+        <button onclick="Age_Function()">Click here</button>
+        <p id="Vote"></p>
+	
+	</body>
+</html>
