@@ -1,30 +1,14 @@
-<!-- 
-ASSIGNMENT (Step 118)
-    1. Within the Basic Javascripts folder, create a "Project6_ternary__operators_constructors" folder. Then, within this folder, create a new file and name it “index.html”.
-    2. Within the index.html file, do the following:
-        Write out the basic HTML template.
-        Within the <head> or <body> element, write the following code:    
-            <script src="./JS/main.js"></script>    
-        Within the <body> element write all the following code:
-            <p>Riders must be at least 52 centimeters tall to ride.</p>
-            <input id="Height" value="52" />
-            <button onclick="Ride_Function()">Click here</button>
-            <p id="Ride"></p>
-        Save the file.
-    3. Create a JS folder within the Project6_ternary_operators_constructors folder. Create a new file within the JS folder and name it “main.js”. In it, write the following code:
-            function Ride_Function() {
-                var Height, Can_Ride;
-                Height = document.getElementById("Height").value;
-                Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
-                document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
-            }
-    4. Save the file.
-    5. Successfully execute the index.html file in the browser.
-CHALLENGE (Step 119)
-    Utilizing HTML, JavaScript and ternary operators, create a basic program that outputs whether or not a user is old enough to vote.
-    In this program, the user will be able to input their age. If they are under 18, make it state, “You are not old enough to vote” (or a different string of your choosing). 
-    If they are 18 or older, make it state, “You can vote!” (or a different string of your choosing).
- -->
+<!-- ASSIGNMENT SUBMISSION (Step 129)
+    Push your “Basic JavaScript Projects” folder containing your "Project6_ternary_operators_constructors" folder to your JavaScript Projects GitHub repository.
+    Minimum project requirements:
+    The code you submit must minimally include the following:
+        Write a function using HTML and JavaScript that utilizes a ternary operation using input from the browser
+        Write a constructor function that uses the “new” and “this” keywords
+        Create a function to display the results of the constructor function within an HTML element
+        Write a nested function
+        Add comments throughout your JavaScript explaining your code
+    You can submit more than the above list but your submission must at least include these points.
+    Then submit the URL for your code to your Instructor for review. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,16 +20,84 @@ CHALLENGE (Step 119)
 	</head>
 	<body>
 
+        <!-- ASSIGNMENT (Step 118)
+                1. Within the Basic Javascripts folder, create a "Project6_ternary__operators_constructors" folder. Then, within this folder, create a new file and name it “index.html”.
+                2. Within the index.html file, do the following:
+                    Write out the basic HTML template.
+                    Within the <head> or <body> element, write the following code:    
+                        <script src="./JS/main.js"></script>    
+                    Within the <body> element write all the following code:
+                        <p>Riders must be at least 52 centimeters tall to ride.</p>
+                        <input id="Height" value="52" />
+                        <button onclick="Ride_Function()">Click here</button>
+                        <p id="Ride"></p>
+                    Save the file.
+                3. Create a JS folder within the Project6_ternary_operators_constructors folder. Create a new file within the JS folder and name it “main.js”. In it, write the following code:
+                        function Ride_Function() {
+                            var Height, Can_Ride;
+                            Height = document.getElementById("Height").value;
+                            Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
+                            document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+                        }
+                4. Save the file.
+                5. Successfully execute the index.html file in the browser. -->
+        <h1>Assignments:</h1>
+        <p>Step 118</p>
         <p>Riders must be at least 52 centimeters tall to ride.</p>
-        <input id="Height" value="52" />
-        <button onclick="Ride_Function()">Click here</button>
+        <input id="Height" value="" placeholder="Height in cm" />
+        <button onclick="Ride_Function()">Click Here</button>
         <p id="Ride"></p>
         <br>
-        <br>
+
+        <!-- CHALLENGE (Step 119)
+                Utilizing HTML, JavaScript and ternary operators, create a basic program that outputs whether or not a user is old enough to vote.
+                In this program, the user will be able to input their age. If they are under 18, make it state, “You are not old enough to vote” (or a different string of your choosing). 
+                If they are 18 or older, make it state, “You can vote!” (or a different string of your choosing).-->
+        <p>Step 119</p>
         <p>Please enter your age:</p>
-        <input id="Age" value="18" />
-        <button onclick="Age_Function()">Click here</button>
+        <input id="Age" value="" placeholder="Age" />
+        <button onclick="Age_Function()">Click Here</button>
         <p id="Vote"></p>
+        <br>
+        <!--  -->
+        <p>Step 122</p>
+        <button onclick="myFunction()">Click Here</button>
+        <p id="Keywords_and_Constructors"></p>
+        <br>
+
+        <!-- ASSIGNMENT (Step 123)
+                Working within the Project6_ternary_operators_constructors folder:
+                1. Open index.html and write the following code within the <body> element:
+                    <button onclick="">Click Here</button>
+                    <p id="New_and_This"></p>
+                Save the file.
+                2. Open main.js and utilize the new keyword. Save the file.
+                3. Successfully run index.html in the browser. -->
+        <p>Step 123</p>
+        <button onclick="">Click Here</button>
+        <p id="New_and_This"></p>
+        <br>
+
+        <!-- Challenge (Step 125)
+                1. Assign a variable the value of a reserved word. Attempt to display this in the browser.
+                2. Write an object constructor function. -->
+        <p>Step 125</p>
+        <button onclick="Character_Function()">Click Here</button>
+        <p id="character"></p>
+        <br>
+
+        <!-- ASSIGNMENT (Step 128)
+                1. Open index.html and write the following code within the <body> element:
+                    <p id="Nested_Function" onclick=""></p>
+                Save the file.
+                2. Open main.js and write a nested function.
+                3. Ensure to include document.getElementById() method in your code and to reference the function in the <p> element. Save the file.
+                4. Successfully execute index.html in the browser. -->
+        <p>Step 128</p>
+        <p id="Nested_Function" onclick="count_Function()">Click Here</p>
+        <br>
+
 	
 	</body>
 </html>
+
