@@ -1,3 +1,7 @@
+document.write("ASSIGNMENTS:")
+document.write("<br>");
+document.write("<br>");
+
 //  ASSIGNMENT (Step 94)
         // 1. Within the “Basic JavaScript Projects” folder, create a “Project5_comparisons_type_coercion” folder. Then, within this folder, create a new file and name it “index.html”.
         // 2. Within the index.html file, do the following:
@@ -6,15 +10,13 @@
         // 3. Create a “JS” folder within the “Project5_comparisons_type_coercion” folder. Create a new file within the “JS” folder and name it “main.js”.
         // 4. Write the “document.write()” method and “type of” operator to display the data type of a variable of your choosing.
         // 5. Successfully execute the index.html file in the browser.
-
-document.write("ASSIGNMENTS:")
-document.write("<br>");
-document.write("<br>");
 document.write("(Step 94)") 
 document.write("<br>");       
-document.write(typeof "word");
+var myword = "popcorn";
+document.write(typeof myword);
 document.write("<br>");
-document.write(typeof 3);
+var mynum = 1995;
+document.write(typeof mynum);
 document.write("<br>");
 document.write("<br>");
 
@@ -47,6 +49,7 @@ document.write("<br>");
         // c. Type Ctrl+Shift+I and then click on “Console”.
 document.write("(Step 104)")
 document.write("<br>");
+document.write("91 + 93 in console = 184")
 console.log(91 + 93); //returns the sum 184
 document.write("<br>");
 document.write("<br>");
@@ -61,13 +64,13 @@ document.write("<br>");
 document.write("<br>");
 
 //  ASSIGNMENT (Step 109)
-// 1. Open the main.js file and utilize == to return “true” and “false”. Save the file.
-// 2. Successfully execute index.html in the browser.
+        // 1. Open the main.js file and utilize == to return “true” and “false”. Save the file.
+        // 2. Successfully execute index.html in the browser.
 document.write("(Step 109)");
 document.write("<br>");
-document.write(93 == 93); //output "true"
+document.write(93 == 93); //returns "true"
 document.write("<br>");
-document.write(93 == 95); //output "false"
+document.write(93 == 95); //returns "false"
 document.write("<br>");
 document.write("<br>");
 
@@ -112,17 +115,17 @@ document.write(77 > 7 && 14 > 2);   //both must be true with the && operator to 
 document.write("<br>");
 document.write(77 > 7 && 14 > 22);  //returns "false"
 document.write("<br>");
-document.write(77 > 7 || 14 > 2);   //returns "true" if one is true
+document.write(77 > 7 || 14 > 2);   //returns "true" if one of the || is true
 document.write("<br>");
-document.write(7 > 77 || 14 > 22);  //returns "false" because neither is true
+document.write(7 > 77 || 14 > 22);  //returns "false" when neither is true
 document.write("<br>");
 
 // ASSIGNMENT (Step 115)
         // 1. Open the main.js file and utilize the NOT operator to display true and false.
         // 2. Successfully execute index.html in the browser.
 function not_Function() {
-    document.getElementById("Not").innerHTML = !(22 > 12); //returns "false"
+    document.getElementById("step115a").innerHTML = !(22 > 12); //returns "false"
 }
-function not_Function() {
-    document.getElementById("Not").innerHTML = !(12 > 22); //returns "true" (double-negative)
+function doublenot_Function() {
+    document.getElementById("step115b").innerHTML = !(12 > 22); //returns "true" (double-negative)
 }

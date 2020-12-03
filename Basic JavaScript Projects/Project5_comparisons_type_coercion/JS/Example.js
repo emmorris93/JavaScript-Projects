@@ -3,13 +3,11 @@ function my_Function() {
 }
 
 // isNaN() function display "true"
-function my_Function() {
-    document.getElementById("Test").innherHTML = isNaN('This is a string');
+function nan_true() {
+    document.getElementById("TestA").innerHTML = isNaN('This is a string');
 }
 
 // isNaN() function display "false"
-function my_Function() {
-    document.getElementById("Test").innerHTML = isNaN('007');
+function nan_false() {
+    document.getElementById("TestB").innerHTML = isNaN('007');
 }
-
-
