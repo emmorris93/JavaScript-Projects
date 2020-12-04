@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <script src="./JS/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+		<title>Countdown & Slideshow</title>
+
+	</head>
+	<body>
+
+        <h1>Project 9 - Assignments:</h1>
+        
+        <!-- ASSIGNMENT (Step 154)
+                1. Within the Basic JavaScript Projects folder, create a "Project9_countdown_slideshow" folder. Then, within this folder, create a new file and name it index.html.
+                2. Within the index.html file, do the following:
+                    Write out the basic HTML template.
+                    At the bottom of the <body> element write:
+                                <script src="./JS/main.js"></script>
+                    Write out all of the HTML code contained within the previous course step.
+                    Save the file.
+                3. Create a JS folder within the Project_9_countdown_slideshow folder. Create a new file within the JS folder and name it “main.js”. In it, write out all of the JavaScript code contained within the previous course step. Save the file.
+                4. Successfully execute the index.html file in the browser. -->
+        <p>Step 154</p>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" placeholder="Enter Seconds Here" />
+        <button onclick="countdown()">Click Here</button>
+        <p id="timer"></p>
+        <br>
+        <br>
+
+        <!-- CHALLENGE (Step 156)
+                Using HTML, CSS and JavaScript, create a slideshow.
+                INSTRUCTIONS:
+                Working within the Project9_countdown_slideshow folder:
+                    1. Use this link as a guide:
+                        https://www.w3schools.com/howto/howto_js_slideshow.asp
+                    2. Review all of the code at the above link and ensure to clear up any terms or code you don’t understand through online research.
+                    3. Actually type out all of the code on your own machine – do not just copy and paste.
+                    4. Write all your HTML code within the index.html file.
+                    5. Write all your JavaScript code within the main.js file.
+                    6. Create a CSS folder within the Project9_countdown_slideshow folder. Create a new file within the CSS folder and name it main.css.
+                    7. Once complete, successfully execute the index.html file in the browser to ensure the slideshow works as designed. -->
+        <h2>Step 156</h2>
+        <h2>Aubrey's Star Wars Character Slideshow</h2>
+
+
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/Aubrey_Boba.jpg" style="width:100%" alt="Boba Fett">
+                <div class="text">Aubrey with Boba Fett</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/Aubrey_TuskanRaider.jpg" style="width:100%" alt="Tuskan Raider">
+                <div class="text">Aubrey with Tuskan Raider</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/Aubrey_Others.jpg" style="width: 100%;" alt="Tuskan Raider Chieftan & Imperial Pilot">
+                <div class="text">Aubrey with Tuskan Raider Chieftan and Imperial Pilot</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/Aubrey_Imperial Pilot.jpg" style="width: 100%;" alt="Imperial Pilot">
+                <div class="text">Aubrey with Imperial Pilot</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/Aubrey_StormTrooper.jpg" style="width: 100%;" alt="Storm Trooper">
+                <div class="text">Aubrey with Storm Trooper</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/Aubrey_Jedi.jpg" style="width: 100%;" alt="Two Jedi">
+                <div class="text">Aubrey with Jedi</div>
+            </div>
+
+            <!-- Next and Previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+    </body>
+</html>

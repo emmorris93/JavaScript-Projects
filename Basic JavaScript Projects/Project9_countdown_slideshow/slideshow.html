@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <script src="./JS/slideshow.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/slideshow.css">
+        <title>Countdown & Slideshow</title>
+    </head>
+	<body>
+
+        <h1>Aubrey's Star Wars Character Slideshow</h1>
+
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/Aubrey_Boba.jpg" style="width:100%" alt="Boba Fett">
+                <div class="text">Aubrey with Boba Fett</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/Aubrey_TuskanRaider.jpg" style="width:100%" alt="Tuskan Raider">
+                <div class="text">Aubrey with Tuskan Raider</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/Aubrey_Others.jpg" style="width: 100%;" alt="Tuskan Raider Chieftan & Imperial Pilot">
+                <div class="text">Aubrey with Tuskan Raider Chieftan and Imperial Pilot</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/Aubrey_Imperial Pilot.jpg" style="width: 100%;" alt="Imperial Pilot">
+                <div class="text">Aubrey with Imperial Pilot</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/Aubrey_StormTrooper.jpg" style="width: 100%;" alt="Storm Trooper">
+                <div class="text">Aubrey with Storm Trooper</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/Aubrey_Jedi.jpg" style="width: 100%;" alt="Two Jedi">
+                <div class="text">Aubrey with Jedi</div>
+            </div>
+
+            <!-- Next and Previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+    </body>
+</html>
