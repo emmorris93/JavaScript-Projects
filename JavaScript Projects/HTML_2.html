@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./CSS/CSS_1.css">
+        <script src="./JavaScript/JavaScript_2.js"></script>
+		<title>Challenge Step 221</title>
+
+	</head>
+	<body>
+
+        <!-- CHALLENGE (Step 221)
+                1. Create a new file within your JavaScript folder and name it HTML_2.html. Within this file, create a basic contact form.
+                2. Create a new folder within your JavaScript folder and name it CSS. Within this folder, create a new file and name it CSS_1.css. Within this file, style your contact form.
+                3. Research and learn how to utilize JavaScript for form validation.
+                4. Create a new file within the JavaScript folder and name it JavaScript_2.js. Within this file, write the necessary code to add form validation to a field (or fields) of your contact form.
+                5. Save all of your code and successfully execute it in the browser. -->
+        <h1>Contact Form</h1>  
+        <!-- Start Form Container-->
+        <div class="container">
+            <form name="contactForm" action="" onsubmit="return validateForm()" method="post">
+                <label for="fname">First Name</label>
+                <br>
+                <input type="text" id="fname" name="fname" value="">
+                <br>
+                <label for="lname">Last Name</label>
+                <br>
+                <input type="text" id="lname" name="lname" value="">
+                <br>
+                <label for="phone">Phone</label>
+                <br>
+                <input type="text" id="phone" name="phone" value="">
+                <br>
+                <label for="email">Email Address</label>
+                <br>
+                <input type="text" id="email" name="email" value="">
+                <br>
+                <p>Preferred Contact Method (optional):</p>
+                  
+                <input type="checkbox" id="contact1" name="contact1" value="">
+                <label for="contact1">Phone Call</label>
+                <br>
+                <input type="checkbox" id="contact2" name="contact2" value="">
+                <label for="contact2">Email</label>
+                <br>
+                <input type="checkbox" id="contact3" name="contact3" value="">
+                <label for="contact3">Text</label>
+                <br>
+                    
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!-- End Form Container -->
+
+    </body>
+</html>
+

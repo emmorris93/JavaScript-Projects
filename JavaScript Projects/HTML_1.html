@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+		<title>JavaScript</title>
+
+	</head>
+	<body>
+
+        <!-- ASSIGNMENT (Step 207)
+                1. Create a new folder on your desktop and name it JavaScript Projects.
+                2. Within the JavaScript Projects folder, create a new file and name it HTML_1.html.
+                3. Create a new folder within your JavaScript Projects folder and name it JavaScript.
+                4. Within the JavaScript folder, create a new file and name it JavaScript_1.js.
+                5. Within these new files, write out a switch statement as covered in the previous course step. You can customize the choices and text as you choose (animals, food, vehicles, etc.). Ensure to save the files.
+                6. Successfully execute the switch statement in the browser. -->
+        <p>Step 207</p>
+        <p>What is your favorite 80's Movie?</p>
+        <p>Pick your favorite movie from the list:</p>
+        <ul>
+            <li>0 - LadyHawke</li>
+            <li>1 - Spaceballs</li>
+            <li>2 - Real Genius</li>
+            <li>3 - Better Off Dead</li>
+            <li>4 - Terminator</li>
+            <li>5 - Top Gun</li>
+            <li>6 - Highlander</li>
+            <li>7 - Footloose</li>
+            <li>8 - The Princess Bride</li>
+            <li>9 - Die Hard</li>
+        </ul>
+        <p>Enter the number of your choice below:</p>
+        <input id="Movie_Input" type="text">
+        <button onclick="Movie_Function()">Submit</button>
+        <p id="Output"></p>
+        <br>
+
+        <!-- ASSIGNMENT (Step 216)
+                1. Within the HTML_1.html and JavaScript_1.js files, utilize the document.getElementsByClassName() method. Save your code.
+                2. Successfully execute HTML_1.html in the browser. -->
+        <p>Step 216</p>
+        <p class="Click">This text will change.</p>
+        <p class="Click">This text will not change.</p>
+        <button onclick="Hello_World_Function()">Click Here</button>
+        <br>
+        <br>
+
+        <!-- ASSIGNMENT (Step 218)
+                1. Within the HTML_1.html file, do the following:
+                    Utilize the <canvas> element
+                    Add a border to the canvas
+                    Save your code.
+                2. Successfully execute HTML_1.html in the browser.
+            CHALLENGE (Step 219)
+                1. Research how JavaScript can be utilized with the <canvas> element to create graphics.
+                2. Within the JavaScript_1.js file utilize JavaScript to add a graphic within the canvas.
+                3. Save your code and successfully execute it in the browser. 
+            CHALLENGE (Step 220)
+                1. Define and learn how to utilize the HTML canvas createLinearGradient() Method.
+                2. Create a gradient color background within a canvas.
+                3. Save your code and successfully execute it in the browser.-->
+        <p>Step 218, 219, & 220</p>
+        <!-- canvas element: used to draw graphics on a web page using JavaScript; is only a container for graphics; is a rectangular area on an HTML page  -->
+        <p>Example 1: Basic Empty Canvas</p>
+        <canvas id="Example1" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag.</canvas>
+        <br>
+        <p>Example 2: Adding JavaScript to Draw a Line</p>
+        <canvas id="Example2" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 3: Draw a Circle</p>
+        <canvas id="Example3" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 4: Draw Text</p>
+        <canvas id="Example4" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 5: Stroke Text</p>
+        <canvas id="Example5" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 6: Draw Linear Gradient</p>
+        <canvas id="Example6" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 7: Draw Circular Gradient</p>
+        <canvas id="Example7" width="200" height="100" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <br>
+        <p>Example 8: Draw Image</p>
+        <p>Image:</p>
+        <img id="StarWars" src="./images/StarWars Starry Night.bmp" alt="Star Wars Starry Night" width="564" height="564">
+        <p>Canvas:</p>
+        <canvas id="Example8" width="585" height="585" style="border:1px solid #000000">Your browser does not support the HTML canvas tag</canvas>
+        <p><button onclick="drawImage_Function()">Click Here</button></p>
+        <br>
+        
+        <script src="./JavaScript/JavaScript_1.js"></script>
+	</body>
+</html>
