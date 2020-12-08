@@ -1,0 +1,76 @@
+<!-- TIC TAC TOE ASSIGNMENT PART ONE (Step 246)
+        1) Create a folder on your desktop and name it TicTacToe.
+        2) Inside the TicTacToe folder, create four new folders, named:
+            media
+            css
+            images
+            js
+        3) Open Visual Studio Code.
+        4) Create a new file and save it as TicTacToe.html inside the TicTacToe folder.
+        5) Create a new file and save it as game.css inside the css folder.
+        6) Create a new file and save it as tictactoe.js inside the js folder.
+        7) Download these three files and place them inside the media folder:
+            a. Place Icon
+            b. Tie Game
+            c. Win Game
+        8) Download these two files and place them inside the images folder:
+            a. X
+            b. O 
+    TIC TAC TOE HTML CHALLENGE (Step 248)
+        1) Customize the title of the HTML page to a name of your choosing (such as “Play Tic Tac Toe Online!).
+        2) Add an <h1> element with a header of your choosing (such as “TIC TAC TOE GAME”). 
+    TIC TAC TOE ASSIGNMENT PART THREE (Step 249)
+        1) Open game.css in Visual Studio Code write the following code: (Step 249)
+        2) Save the file.
+        3) Add the link path for the CSS file in the TicTacToe.html file.
+        4) Save it and successfully run TicTacToe.html in the browser.
+    TIC TAC TOE CSS CHALLENGE (Step 250)
+        Within your game.css file, perform the following actions:
+            1) Change the color of the lines of your table to any color of your choosing.
+            2) Center the <h1> element.
+            3) Save game.css and successfully run TicTacToe.html in the browser.
+    ARROW FUNCTION CHALLENGE (Step 252)
+        1) Open a new HTML file and write out the basic HTML template.
+        2) For the purposes of this challenge, we will write inline JavaScript. Within your HTML file, write your own simple JavaScript function.
+        3) Save the file and successfully execute your code in the browser.
+        4) Now rewrite your function as an arrow function.
+        Save the file and successfully execute your code in the browser.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="./css/game.css" >
+        <title>Tic Tac Toe</title>
+        <h1>Shall We Play a Game? <br> Tic-Tac-Toe</h1>
+    </head>
+    
+	<body id="body">
+        <!-- This container is needed to overlay our canvas over our table. -->
+        <div class="center-container">
+            <!-- Note: Canvas width and height must be set within the element. -->
+            <canvas id="win-lines" width="608" height="608"></canvas>
+            <table>
+                <tr>
+                    <td id='0' onclick='placeXorO("0")'></td>
+                    <td id='1' onclick='placeXorO("1")'></td>
+                    <td id='2' onclick='placeXorO("2")'></td>
+                </tr>
+                <tr>
+                    <td id='3' onclick='placeXorO("3")'></td>
+                    <td id='4' onclick='placeXorO("4")'></td>
+                    <td id='5' onclick='placeXorO("5")'></td>
+                </tr>
+                <tr>
+                    <td id='6' onclick='placeXorO("6")'></td>
+                    <td id='7' onclick='placeXorO("7")'></td>
+                    <td id='8' onclick='placeXorO("8")'></td>
+                </tr>
+            </table>
+        </div>
+
+
+	<script src="./js/tictactoe.js"></script>
+	</body>
+</html>

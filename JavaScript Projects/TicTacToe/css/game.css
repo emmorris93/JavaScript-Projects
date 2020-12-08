@@ -1,0 +1,34 @@
+/* Step 249 */
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(64, 175, 50, 0.8);
+    
+}
+
+/* This container includes the table and canvas */
+.center-container {
+    width: 608px;                                   /* sets the width of the container */
+    margin: auto;                                   /* centers the container */
+    margin-top: 50px;                               /* 50px down from the top */
+}
+
+table {
+    border-collapse: collapse;                      /* property to collapse table borders into 1 border */
+    border-style: hidden;                           /* hides outer borders on table */
+}
+
+td {
+    cursor: pointer;                                /* changes the cursor to the index finger hand when you hover over elements */
+    border: 4px solid rgba(64, 175, 50, 0.8);     /* sets table border style */
+    padding: 0px;                                   /* removes default padding */
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute;                             /* sets the position of the canvas to the top left corner of the container */
+    z-index: 10;                                    /* places canvas over the top of the table */
+    pointer-events: none;                           /* makes the canvas invisible */
+}
+
