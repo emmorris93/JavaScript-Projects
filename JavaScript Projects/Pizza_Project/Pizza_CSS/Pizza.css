@@ -11,7 +11,7 @@
     Save the file and run Pizza.html in the browser. */
 
 body {
-    background-color: #663399;
+    background-color: #333366;
 }
 
 h1, h3, div {
@@ -24,10 +24,12 @@ h1, h3, div {
     width: 400px;
     height: 470px;
     margin: 10px auto;
+    text-align: center;
 }
 
+/* container for the menus */
 #frmMenu {
-    width: 400px;
+    width: 600px;
     height: 200px;
 }
 
@@ -38,16 +40,30 @@ h1, h3, div {
     float: right;
 }
 
+/* pizza size menu */
 .left {
     width: 200px;
     height: 200px;
     float: left;
 }
 
+/* meats menu */
 .right {
     width: 200px;
     height: 200px;
     float: right;
+}
+
+/* vegetables menu */
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/* centers the place order button */
+.menu {                         
+    text-align: left;
 }
 
 #showText {
