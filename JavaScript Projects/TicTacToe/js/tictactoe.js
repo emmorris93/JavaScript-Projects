@@ -16,9 +16,9 @@ function placeXorO(squareNumber) {                                              
                                                                                 // each element of selectedSquare array to see if it contains the square number clicked on
         let select = document.getElementById(squareNumber);                     // this variable retrieves the html element id that was clicked
         if (activePlayer === 'X') {                                             // this condition checks who's turn it is
-            select.style.backgroundImage = 'url ("./images/x.png")';            // if activePlayer is equal to 'X', the x.png is placed in HTML
+            select.style.backgroundImage = 'url("./images/x.png")';            // if activePlayer is equal to 'X', the x.png is placed in HTML
         } else {                                                                // activePlayer may only be 'X' or 'O' so, if not 'X' it must be 'O'
-            select.style.backgroundImage = 'url ("./images/o.png")';            // if activePlayer is equal to 'O', the o.png is placed in html
+            select.style.backgroundImage = 'url("./images/o.png")';            // if activePlayer is equal to 'O', the o.png is placed in html
         }
         selectedSquares.push(squareNumber + activePlayer);                      // squareNumber and activePlayer are concatenated together and added to array
         checkWinConditions();                                                   // this calls a function to check for any win conditions
@@ -121,34 +121,35 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         y2 = coordY2,                                                               // this line indicates where the end of a lines y axis is
         x = x1,                                                                     // this variable stores temporary x axis data while it updates in the animation loop
         y = y1;                                                                     // this variable stores temporary y axis data while it updates in the animation loop
-}
 
-// this function ineracts with the canvas
-function animateDrawingLine() {
-    const animationLoop = requestAnimationFrame(animateLineDrawing);                // this variable creates the loop for when the game ends it restarts
-    c.clearRect(0, 0, 608, 608);                                                    // this method clears content from last loop iteration
-    c.beginPath();                                                                  // this method starts a new path
-    c.moveTo(x1, y1);                                                               // this method moves to a starting point for the line
-    c.lineTo(x, y);                                                                 // this method indicates the end point in the line
-    c.lineWidth = 10;                                                               // this method sets the width of the line
-    c.strokeStyle = 'rgba(70, 255, 33, 0.8';                                        // the methods sets the color of the line
-    c.stroke();                                                                     // this method draws everything that was laid out above
-    if (x1 <= x2 && y1 <= y2) {                                                     // this condition checks if the endpoint is reached
-        if (x < y2) {x += 10;}                                                      // this condition adds 10 to the previous end x point
-        if (y < y2) {y += 10;}                                                      // this condition adds 10 to the previous end y point
-        if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}              // this condition cancels the animation loop if end points are reached
-    }
-    if (x1 <= x2 && y1 >= y2) {                                                     // this condition is similar to above -- it's necessary for the 6, 4, 2 win condition
-        if (x < x2) {x += 10;}
-        if (y > y2) {y -= 10;}
-        if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}
+
+    // this function ineracts with the canvas
+    function animateLineDrawing() {
+        const animationLoop = requestAnimationFrame(animateLineDrawing);                // this variable creates the loop for when the game ends it restarts
+        c.clearRect(0, 0, 608, 608);                                                    // this method clears content from last loop iteration
+        c.beginPath();                                                                  // this method starts a new path
+        c.moveTo(x1, y1);                                                               // this method moves to a starting point for the line
+        c.lineTo(x, y);                                                                 // this method indicates the end point in the line
+        c.lineWidth = 10;                                                               // this method sets the width of the line
+        c.strokeStyle = 'rgba(70, 255, 33, 0.8';                                        // the methods sets the color of the line
+        c.stroke();                                                                     // this method draws everything that was laid out above
+        if (x1 <= x2 && y1 <= y2) {                                                     // this condition checks if the endpoint is reached
+            if (x < y2) {x += 10;}                                                      // this condition adds 10 to the previous end x point
+            if (y < y2) {y += 10;}                                                      // this condition adds 10 to the previous end y point
+            if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}              // this condition cancels the animation loop if end points are reached
+        }
+        if (x1 <= x2 && y1 >= y2) {                                                     // this condition is similar to above -- it's necessary for the 6, 4, 2 win condition
+            if (x < x2) {x += 10;}
+            if (y > y2) {y -= 10;}
+            if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}
+        }
     }
 
-// this function clears the canvas after the win line is drawn
-function clear() {
-    const animationLoop = requestAnimationFrame(clear);                             // this line starts the animation loop
-    c.clearRect(0, 0, 608, 608);                                                    // this line clears the canvas
-    cancelAnimationFrame(animationLoop);                                            // this line stops the animation loop
+    // this function clears the canvas after the win line is drawn
+    function clear() {
+        const animationLoop = requestAnimationFrame(clear);                             // this line starts the animation loop
+        c.clearRect(0, 0, 608, 608);                                                    // this line clears the canvas
+        cancelAnimationFrame(animationLoop);                                            // this line stops the animation loop
     }
     disableClick();                                                                 //this line disallows clicking while the win sound is playing
     audio('./media/winGame.mp3');                                                   // this line plays the win sounds
@@ -156,17 +157,18 @@ function clear() {
     setTimeout (function() {clear(); resetGame();}, 1000);                          // this line waits 1 sec, then clears the canvas, resets the game and allows clicking again
 }
 
-// ASSIGNMENT TIC TAC TOE PART EIGHT (Step 259)
-    // The game is now stuck in a loop and doesn't end – so let’s fix that.
-    // At the end of each game we will have the canvas reset automatically through our resetGame function.
-        // 1) In the tictactoe.js file write the following code: (Step 259)
-        // 2) Save tictactoe.js and successfully run TicTacToe.html in the browser.
+    // ASSIGNMENT TIC TAC TOE PART EIGHT (Step 259)
+        // The game is now stuck in a loop and doesn't end – so let’s fix that.
+        // At the end of each game we will have the canvas reset automatically through our resetGame function.
+            // 1) In the tictactoe.js file write the following code: (Step 259)
+            // 2) Save tictactoe.js and successfully run TicTacToe.html in the browser.
 
-// this function resets the game in a tie or win
+    // this function resets the game in a tie or win
 function resetGame() {
-    for (let i = 0; i < 9; itt) {                                                   // this for loop iterates through each HTML square element
+    for (let i = 0; i < 9; i++) {                                                   // this for loop iterates through each HTML square element
         let square = document.getElementById(String(i));                            // this variable gets the HTML element of i
         square.style.backgroundImage = '';                                          // this removes our elements backgroundImage
     }   
     selectedSquares = [];                                                           // this rests the array so it is empty and can then start over
 }
+
