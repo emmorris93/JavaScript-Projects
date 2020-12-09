@@ -70,9 +70,11 @@ function Update_Display() {                                                     
     display.value = Calculator.Display_Value;
 }
 
-Update_Display();                                                                               // this section monitors button clicks
+Update_Display();   
+
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
+console.log("click event called");
     const {target} = event;                                                                     // the target variable is anobject that represents the element that was clicked
     if (!target.matches('button')) {                                                            // if the element that was clicked on is not a button, exit the function
         return;
