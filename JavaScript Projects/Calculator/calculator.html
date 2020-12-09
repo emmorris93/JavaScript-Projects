@@ -1,0 +1,52 @@
+<!-- CALCULATOR (Step 265)
+        To give you more experience in using HTML, CSS and JavaScript together, we will show you how to make a basic calculator with these languages.
+        Though almost all of this code has been covered earlier on your training, be sure to clear up anything you don’t recall through online research.
+    ASSIGNMENT (Step 266)
+        1. In your JavaScript Projects folder, create a new file and name it calculator.html.
+        2. In this file, write the HTML code from the previous course step.
+        3. Save your code and successfully execute it in the browser.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A basic HTML, CSS and JavaScript Calculator">
+        <meta name="author" content="Maudi Morris"
+        <script src="./js/calculator.js" defer></script>
+        <link rel="stylesheet" href="./css/calculator.css">
+    </head>
+
+    <body>
+
+        <div class="calculator">
+            <input type="text" class="calculator-screen" value="0" disabled/>
+            <div class="calculator-keys">
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">&times;</button>
+                <button type="button" class="operator" value="/">&divide;</button>
+
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
+
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
+
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+
+                <button type="button" value="0">0</button>
+
+                <button type="button" class="decimal function" value=".">.</button>
+                <button type="button" class="all-clear function" value="all-clear">AC</button>
+                <button type="button" class="equal-sign operator" value="=">=</button>
+            </div>
+        </div>
+    
+    </body>
+</html>

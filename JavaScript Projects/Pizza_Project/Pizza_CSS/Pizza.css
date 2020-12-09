@@ -1,0 +1,71 @@
+/* Step 276 */
+/* CHALLENGE (Step 278)
+    Within your Pizza.css file, perform the following actions:
+        1. Assign a background color to your <body> element.
+        2. Assign a font family to all <h1> elements.
+        3. Assign a color to all <h1> elements.
+        4. Assign a font family to all <h3> elements.
+        5. Assign a color to all <h3> elements.
+        6. Assign a font family to all <div> elements.
+        7. Assign a color to all <div> elements.
+    Save the file and run Pizza.html in the browser. */
+
+body {
+    background-color: #663399;
+}
+
+h1, h3, div {
+    font-family: sans-serif;
+    color: gold;
+    text-shadow: 2px 2px black;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0 px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
