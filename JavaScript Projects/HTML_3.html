@@ -1,8 +1,21 @@
+<!-- CHALLENGE (Step 359)
+        Open one of your HTML files, and set the font size using the vw unit.
+        vw unit:  means "viewport width"; the responsive text size will follow the size of the browswer window
+    CHALLENGE (Step 360)
+        Open one of your HTML files, and create an effect that makes it so the elements fade in as the page loads.
+        fade out class:  add the fade-out class to your body with a script, then removes it when they page is done loading; this effect is handled completely with CSS
+        and JavaScript is used to add/remove the class (ensures the page stilld isplays if scripts are disabled)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>HTML 3 Assignemtn</title>
+
+        <title>HTML 3 Assignment</title>
+        <meta charset="utf-8">
+        <script src="./JavaScript/JavaScript_3.js" defer></script>
+        <link rel="stylesheet" href="./CSS/HTML_3.css">
+
 
 	</head>
 	<body>
@@ -13,8 +26,8 @@
             3. Within the HTML_3.html and JavaScript_3.js files, utilize the data attribute as covered in the previous course step. You should customize the content.
             Save your code.
             Successfully execute HTML_3.html in the browser. -->
-        <h1>Characters</h1>
-        <h3>Click on the game to see my character's name!</h3>
+        <h1 style="font-size: 5vw;">Characters</h1>
+        <h3 style="font-size: 3vw;">Click on the game to see my character's name!</h3>
 
         <ul>
             <li onclick="displayType(this)" id="WoW" data-character-type="Oslana">World of Warcraft</li>
@@ -25,6 +38,7 @@
             <li onclick="displayType(this)" id="EQ" data-character-type="Seyr Lotho">Everquest</li>
         </ul>
 
-	<script src="./JavaScript/JavaScript_3.js"></script>
+        <script>document.body.className += ' fade-out';</script>
+
 	</body>
 </html>

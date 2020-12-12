@@ -1,0 +1,41 @@
+<!-- ASSIGNMENT (Step 350)
+    1. Within your React projects folder, create a new file and name it React_3.html.
+    2. Open React_3.html and write out the basic HTML template. Save your file.
+    3. Use the <script> tag and src attribute within your <head> element to link to the React libraries and JSX library via URL:
+    4. Within your <body> element create a <div> and assign it an ID.
+    5. After the closing </div> tag but still within the <body>, add the following code:
+    NOTE:
+        You can customize the text within the <h1> element.
+        “React.Component” is used to specify a class or function.
+        “Class” above specifies a class.
+        The “render()” is used to create a function in React.
+        The “return” statement returns information.
+    6. Save and successfully execute your code in the browser.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+        <title>React_3 (Step 350)</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/ract-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+	</head>
+	<body>
+
+        <div id="JSX"></div>
+
+        <script type="text/babel">
+        class Greeting extends React.Component{
+            render() {
+                return<h1>Hell0, World!</h1>
+            }
+        }
+
+        ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+        </script>
+	
+	</body>
+</html>
