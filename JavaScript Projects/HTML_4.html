@@ -1,3 +1,16 @@
+<!-- 
+    CHALLENGE (Step 359)
+        Open one of your HTML files, and set the font size using the vw unit.
+    CHALLENGE (Step 360)
+        Open one of your HTML files, and create an effect that makes it so the elements fade in as the page loads.
+    CHALLENGE (Step 361)
+        1. Create a form that includes a phone number field.
+        2. Utilize JavaScript Form Validation to create an alert if someone attempts to submit the form with an empty field(s).
+    CHALLENGE (Step 362)
+        Create a popup contact form.
+    CHALLENGE (Step 363)
+        Successfully utilize the keyframe rule to animate an element.
+ -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,60 +23,78 @@
 	</head>
 	<body>
 
-        <h1 style="font-size: 2vw;">Create Account Form</h1>  
-
+        <button id="toggleButton" class="open-button" onclick="toggleForm()">Already have an account? Click Here</button>
         <!-- START Form Container-->
-        <div class="container">
-            <form name="contactForm" action="" onsubmit="return validateForm()" method="post">
-                <label for="fname">First Name</label>
-                <br>
-                <input type="text" id="fname" name="fname" value="">
-                <br>
-                <label for="lname">Last Name</label>
-                <br>
-                <input type="text" id="lname" name="lname" value="">
-                <br>
-                <label for="phone">Phone</label>
-                <br>
-                <input type="text" id="phone" name="phone" value="">
-                <br>
-                <label for="email">Email Address</label>
-                <br>
-                <input type="text" id="email" name="email" value="">
-                <br>
-                <label form="pword">Create Password</label>
-                <br>
-                <input type="text" id="pword" name="pword" value="">
-                <br>
+        <div id="createAccountFormContainer" class="container">
+            <h1 style="font-size: 2vw;">Create Account Form:</h1>  
+
+            <!-- START Create Account Form -->
+            <form name="accountForm" action="" onsubmit="return validateForm()" method="post">
+                
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+
+                <label for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone" value=""><br>
+
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" value=""><br>
+
+                <label form="pword">Create Password</label><br>
+                <input type="password" id="pword" name="pword" value=""><br>
+
                 <p>Preferred Contact Method (optional):</p>
                   
                 <input type="checkbox" id="contact1" name="contact1" value="">
-                <label for="contact1">Phone Call</label>
-                <br>
+                <label for="contact1">Phone Call</label><br>
+                
                 <input type="checkbox" id="contact2" name="contact2" value="">
-                <label for="contact2">Email</label>
-                <br>
+                <label for="contact2">Email</label><br>
+
                 <input type="checkbox" id="contact3" name="contact3" value="">
-                <label for="contact3">Text</label><br><br>
+                <label for="contact3">Text Message</label><br><br>
+                
                 <input type="submit" value="Submit"><br><br>
 
             </form>
+            <!-- END Create Account Form -->
+
         </div>
         <!-- END Form Container -->
 
-        <!-- START PopUp Login Form -->
-        <button class="open-button" onclick="openForm()">Already have an account? Login Here</button>
+        <!-- START PopUp Login Container -->
         <div class="form-popup" id="popupForm">
+
+            <!-- START PopUp Login Form -->
+
             <form class="form-container" action="">
-                <h1>Login</h1>
+                <h1>Login:</h1>
                 <label for="email"><b>Email</b></label>
-                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="email" id="email" name="email" placeholder="" required>
+
                 <label for="pword"><br>Password</label>
-                <input type="password" name="pword" placeholder="Enter Password" required>
-                <button type="submit" class="btn">Login</button>
+                <input type="password" id="pword" name="pword" placeholder="" required>
+
+                <button type="submit" class="btn login">Login</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+
             </form>
+            <!-- END PopUp Login Form -->
+
         </div>
-        <!-- END PopUp Login Form -->
+        <!-- END PopUp Login Container -->
+
+        <!-- START Animation -->
+
+        <div id="movingDiv">
+            <img src="./images/thumbs up.jpg" alt="Thumbs Up">
+        </div>
+
+
+
+
 	</body>
 </html>

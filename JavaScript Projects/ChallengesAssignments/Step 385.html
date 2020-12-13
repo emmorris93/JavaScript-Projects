@@ -1,0 +1,43 @@
+<!-- 
+    LOCALSTORAGE() METHOD ASSIGNMENT (Step 385)
+        Write and successfully execute the localStorage() method in the browser.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+        <title>Step 38</title>
+        <meta charset="utf-8">
+
+	</head>
+	<body>
+
+        <h1>localStorage() Method</h1>
+        
+        <p>The localStorage and sessionStorage properties allow to save key/value pairs in a web browser. <br>
+            The localStorage object stores data with no expiration date. The data will not be deleted when the browser 
+            is closed, and will be available the next day, week, or year. <br>
+            The localStorage property is read-only. <br><br>
+            Example
+            Create a localStorage name/value pair with name="lastname" and value="Smith", then retrieve the value of "lastname" <br>
+            and insert it into the element with id="result":
+        </p>
+
+        <div id="result"></div>
+
+        <script>
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+          // Store
+          localStorage.setItem("lastname", "Smith");
+          // Retrieve
+          document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        </script>
+        
+	
+	</body>
+</html>

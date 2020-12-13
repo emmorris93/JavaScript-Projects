@@ -1,0 +1,28 @@
+<!-- 
+    JSON.STRINGIFY() ASSIGNMENT (Step 381)
+        Write and successfully execute the JSON.stringify() method in the browser.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+        <title>Step 381</title>
+        <meta charset="utf-8">
+        <!-- <script src="./JavaScript/Step 381.js"></script> -->
+
+	</head>
+	<body>
+
+        <h2>Create JSON string from a JavaScript object.</h2>
+
+        <p id="demo"></p>
+        
+        <script>
+        var obj = { "name":"John", "age":30, "city":"New York"};
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+        </script>
+	
+	</body>
+</html>

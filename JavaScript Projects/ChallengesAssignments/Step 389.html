@@ -1,0 +1,35 @@
+<!-- 
+    CHALLENGE (Step 389)
+    Perform these actions:
+        1. Create a basic HTML webpage.
+        2. Ensure it includes least one paragraph element.
+        3. Add the ondblclick event handler to the paragraph element.
+        4. Add the script element and a function (of your choosing) to be called when the paragraph is double clicked.
+        5. Successfully run the code in your browser and double click the paragraph element to ensure it works.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+        <title>CHALLENGE | Steo 389</title>
+        <meta charset="utf-8">
+
+	</head>
+	<body>
+
+        <h1>CHALLENGE (Step 389)</h1>
+        
+        <p ondblclick="myFunction()">Double-click on this paragraph to trigger a function.</p>
+
+        <p id="example"></p>
+
+        <script>
+        function myFunction() {
+        document.getElementById("example").innerHTML = "This text is displayed after you double-click";
+        }
+        </script>
+
+	
+	</body>
+</html>
